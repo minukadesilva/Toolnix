@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title><link rel="icon" type="image/x-icon" href="\main\favicon.ico">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1340921744806564"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header" class="menu-container">
+      <div class="logo-img">
+        <a href="/index.html"><img src="\main\logo.png" alt=""></a>
+      </div>
+       
+        <!--   navbar -->
+        <nav id="nav-bar">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+          <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html" class="nav-link">About</a></li>
+            <li><a href="/index.html">Contact Us</a></li>
+            <a class="highlight" href="/index.html">Our Tools</a>
+          </ul>
+        </nav>
+        <!--   navbar -->
+      </header>
+      
+    <div class="container">
+      <div class="stats">
+        <p>Time: <span id="timer">0s</span></p>
+        <p>Mistakes: <span id="mistakes">0</span></p>
+      </div>
+      <div
+        id="quote"
+        onmousedown="return false"
+        onselectstart="return false"
+      ></div>
+      <textarea
+        rows="3"
+        id="quote-input"
+        placeholder="Type here when the test starts.."
+      ></textarea>
+      <button id="start-test" onclick="startTest()">Start Test</button>
+      <button id="stop-test" onclick="displayResult()">Stop Test</button>
+      <div class="result">
+        <h3>Result</h3>
+        <div class="wrapper">
+          <p>Accuracy: <span id="accuracy"></span></p>
+          <p>Speed: <span id="wpm"></span></p>
+        </div>
+      </div>
+    </div>
+    !-- Script -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

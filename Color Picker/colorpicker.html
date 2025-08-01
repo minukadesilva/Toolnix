@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Color Picker</title>
+    <link rel="icon" type="image/x-icon" href="\main\favicon.ico">
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1340921744806564"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header" class="menu-container">
+      <div class="logo-img">
+        <a href="/index.html"><img src="\main\logo.png" alt=""></a>
+      </div>
+       
+        <!--   navbar -->
+        <nav id="nav-bar">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+          <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html" class="nav-link">About</a></li>
+            <li><a href="/index.html">Contact Us</a></li>
+            <a class="highlight" href="/index.html">Our Tools</a>
+          </ul>
+        </nav>
+        <!--   navbar -->
+      </header>
+    <div class="wrapper">
+      <div class="image-container">
+        <img id="image" src="demo-img3.jpeg" />
+      </div>
+      <div class="btns-container">
+        <input type="file" id="file" accesskey="image/*" />
+        <label for="file">Open A Photo</label>
+        <button id="pick-color">Pick Color</button>
+      </div>
+      <div id="error" class="hide"></div>
+      <div id="result" class="hide">
+        <div>
+          <input type="text" id="hex-val-ref" />
+          <button onclick="copy('hex-val-ref')">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+        <div>
+          <input type="text" id="rgb-val-ref" />
+          <button onclick="copy('rgb-val-ref')">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+        <div id="picked-color-ref"></div>
+      </div>
+      <div id="custom-alert">Color Code Copied!</div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

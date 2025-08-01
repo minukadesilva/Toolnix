@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Code Reader</title>
+    <link rel="stylesheet" href="style.css"><link rel="icon" type="image/x-icon" href="\main\favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1340921744806564"
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header" class="menu-container">
+      <div class="logo-img">
+        <a href="/index.html"><img src="\main\logo.png" alt=""></a>
+      </div>
+       
+        <!--   navbar -->
+        <nav id="nav-bar">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+          <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html" class="nav-link">About</a></li>
+            <li><a href="/index.html">Contact Us</a></li>
+            <a class="highlight" href="/index.html">Our Tools</a>
+          </ul>
+        </nav>
+        <!--   navbar -->
+      </header>
+    <div class="wrapper">
+      <form action="#">
+        <input type="file" hidden>
+        <img src="#" alt="qr-code">
+        <div class="content">
+          <i class="fas fa-cloud-upload"></i>
+          <p>Upload QR Code to Read</p>
+        </div>
+      </form>
+      <div class="details">
+        <textarea spellcheck="false" disabled></textarea>
+        <div class="buttons">
+          <button class="close">Close</button>
+          <button class="copy">Copy Text</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
